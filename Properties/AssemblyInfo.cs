@@ -1,15 +1,17 @@
 ﻿using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Windows;
 
 // 組件的一般資訊是由下列的屬性集控制。
 // 變更這些屬性的值即可修改組件的相關
 // 資訊。
-[assembly: AssemblyTitle("WindowsFormsApplication1")]
+[assembly: AssemblyTitle("MonopolyCSharp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WindowsFormsApplication1")]
+[assembly: AssemblyProduct("MonopolyCSharp")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,8 +21,25 @@ using System.Runtime.InteropServices;
 // 的類型，請在該類型上將 ComVisible 屬性設定為 true。
 [assembly: ComVisible(false)]
 
-// 下列 GUID 為專案公開 (Expose) 至 COM 時所要使用的 typelib ID
-[assembly: Guid("00a47952-124e-43c9-a9b5-88dee27b91e1")]
+//為了建置可當地語系化的應用程式，請設定 
+//.csproj 檔案中 <PropertyGroup> 內的
+//<UICulture>CultureYouAreCodingWith</UICulture>。例如，如果原始程式檔使用美式英文， 
+//請將 <UICulture> 設為 en-US。然後取消註解下列
+//NeutralResourceLanguage 屬性。在下一行中更新 "en-US"，
+//以符合專案檔中的 UICulture 設定。
+
+//[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
+
+
+[assembly: ThemeInfo(
+    ResourceDictionaryLocation.None, //主題特定資源字典的位置
+                                     //(用於頁面中找不到資源時， 
+                                     // 或應用程式資源字典中找不到資源時)
+    ResourceDictionaryLocation.SourceAssembly //泛型資源字典的位置
+                                              //(用於頁面中找不到資源時， 
+                                              // 或是應用程式或任何主題特定資源字典中找不到資源時)
+)]
+
 
 // 組件的版本資訊由下列四個值所組成: 
 //
