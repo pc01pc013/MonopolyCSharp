@@ -5,9 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MonopolyCSharp"
         mc:Ignorable="d"
-        Title="MonopolyCSharp" Height="477.632" Width="760.526">
+        Title="MonopolyCSharp" Height="700" Width="700" Background="#FF686868">
     <Grid>
-        <Label x:Name="label" Content="MonopolyCSharp" HorizontalAlignment="Left" Margin="94,154,0,0" VerticalAlignment="Top" Height="136" Width="604" FontFamily="Noto Sans T Chinese Regular" FontSize="64"/>
+        <Image x:Name="Image_Map" HorizontalAlignment="Left" Height="560" VerticalAlignment="Top" Width="572" Margin="68,95,0,0" Source="images/monopoly.jpg"/>
+        <Grid HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="692">
+            <Rectangle Fill="White" HorizontalAlignment="Left" Height="80" Stroke="Black" VerticalAlignment="Top" Width="692" Margin="0,3,0,0"/>
+            <Label x:Name="label_time" Content="1月1日（一）" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,19,0,0" Height="51" Width="166" FontSize="26.667" FontWeight="Bold"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="75" Source="images/1head.png" Margin="190,5,0,0"/>
+            <Label x:Name="label_money1" Content="現金：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,15,0,0" FontSize="16"/>
+            <Label x:Name="label_deposit1" Content="存款：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,45,0,0" FontSize="16"/>
+            <Label x:Name="label_deposit2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,45,0,0" FontSize="16"/>
+            <Label x:Name="label_money2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,15,0,0" FontSize="16"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/2head.png" Margin="415,6,0,0"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/3head.png" Margin="547,6,0,0"/>
+            <Label x:Name="label_money_another1" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,11,0,0" FontSize="16"/>
+            <Label x:Name="label_money_another2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,11,0,0" FontSize="16"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/4head.png" Margin="415,44,0,0"/>
+            <Label x:Name="label_money_another3" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,49,0,0" FontSize="16"/>
+        </Grid>
+        <Image x:Name="image_person1" HorizontalAlignment="Left" Height="121" VerticalAlignment="Top" Width="78" Source="images/1.png" Margin="310,519,0,0"/>
 
     </Grid>
 </Window>
