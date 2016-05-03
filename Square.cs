@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace MonopolyCSharp
 {
+    /// <summary>
+    /// MonopolyCSharp-地圖
+    /// </summary>
     class Square
     {
 

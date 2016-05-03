@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace MonopolyCSharp
 {
     /// <summary>
-    /// MonopolyCSharp-人物
+    /// MonopolyCSharp-主程式
     /// </summary>
-    class Person
+    class MainProgram
     {
 
     }

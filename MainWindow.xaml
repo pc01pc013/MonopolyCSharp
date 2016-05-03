@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MonopolyCSharp" Height="700" Width="700" Background="#FF686868">
     <Grid>
-        <Image x:Name="Image_Map" HorizontalAlignment="Left" Height="560" VerticalAlignment="Top" Width="572" Margin="68,95,0,0" Source="images/monopoly.jpg"/>
+        <Image x:Name="Image_Map" HorizontalAlignment="Left" Height="560" VerticalAlignment="Top" Width="560" Margin="68,95,0,0" Source="images/monopoly.jpg"/>
         <Grid HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="692">
             <Rectangle Fill="White" HorizontalAlignment="Left" Height="80" Stroke="Black" VerticalAlignment="Top" Width="692" Margin="0,3,0,0"/>
             <Label x:Name="label_time" Content="1月1日（一）" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,19,0,0" Height="51" Width="166" FontSize="26.667" FontWeight="Bold"/>
