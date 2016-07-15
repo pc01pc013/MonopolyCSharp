@@ -5,25 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MonopolyCSharp"
         mc:Ignorable="d"
-        Title="MonopolyCSharp" Height="700" Width="700" Background="#FF686868">
-    <Grid>
-        <Image x:Name="Image_Map" HorizontalAlignment="Left" Height="560" VerticalAlignment="Top" Width="560" Margin="68,95,0,0" Source="images/monopoly.jpg"/>
-        <Grid HorizontalAlignment="Left" Height="90" VerticalAlignment="Top" Width="692">
-            <Rectangle Fill="White" HorizontalAlignment="Left" Height="80" Stroke="Black" VerticalAlignment="Top" Width="692" Margin="0,3,0,0"/>
-            <Label x:Name="label_time" Content="1月1日（一）" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,19,0,0" Height="51" Width="166" FontSize="26.667" FontWeight="Bold"/>
-            <Image x:Name="image" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="75" Source="images/1head.png" Margin="190,5,0,0"/>
-            <Label x:Name="label_money1" Content="現金：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,15,0,0" FontSize="16"/>
-            <Label x:Name="label_deposit1" Content="存款：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,45,0,0" FontSize="16"/>
-            <Label x:Name="label_deposit2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,45,0,0" FontSize="16"/>
-            <Label x:Name="label_money2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="323,15,0,0" FontSize="16"/>
-            <Image x:Name="image1" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/2head.png" Margin="415,6,0,0"/>
-            <Image x:Name="image2" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/3head.png" Margin="547,6,0,0"/>
-            <Label x:Name="label_money_another1" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,11,0,0" FontSize="16"/>
-            <Label x:Name="label_money_another2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="587,11,0,0" FontSize="16"/>
-            <Image x:Name="image3" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35" Source="images/4head.png" Margin="415,44,0,0"/>
-            <Label x:Name="label_money_another3" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460,49,0,0" FontSize="16"/>
+        Title="MonopolyCSharp" Height="700" Width="700" Background="#FF686868" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid x:Name="MWGird">
+        <Image x:Name="Image_Map" HorizontalAlignment="Left" Height="593" VerticalAlignment="Top" Width="591" Margin="50,62,0,0" Source="images/monopoly.jpg"/>
+        <Grid x:Name="MWGirdInformation" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="692">
+            <Rectangle x:Name="MWRectangle" Fill="White" HorizontalAlignment="Left" Height="54" Stroke="Black" VerticalAlignment="Top" Width="692" Margin="0,3,0,0"/>
+            <Label x:Name="label_time" Content="12月12日" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,15,0,0" Height="36" Width="124" FontSize="18.667" FontWeight="Bold"/>
+            <Image x:Name="imagehead1" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="images/1head.png" Margin="134,5,0,0"/>
+            <Label x:Name="label_money1" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="184,18,0,0" FontSize="16"/>
+            <Image x:Name="imagehead2" HorizontalAlignment="Left" Width="50" Source="images/2head.png" Margin="259,5,0,2"/>
+            <Image x:Name="imagehead4" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="images/3head.png" Margin="506,5,0,0"/>
+            <Label x:Name="label_money2" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="314,18,0,0" FontSize="16"/>
+            <Label x:Name="label_money3" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,18,0,0" FontSize="16"/>
+            <Image x:Name="imagehead3" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50" Source="images/4head.png" Margin="385,5,0,0"/>
+            <Label x:Name="label_money4" Content="999999" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="561,18,0,0" FontSize="16"/>
         </Grid>
-        <Image x:Name="image_person1" HorizontalAlignment="Left" Height="121" VerticalAlignment="Top" Width="78" Source="images/1.png" Margin="310,519,0,0"/>
+        <Image x:Name="image_person1" HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="56" Source="images/1.png" Margin="366,57,0,0"/>
+        <Canvas x:Name="MW_Canvas1" HorizontalAlignment="Left" Height="59" Margin="263,331,0,0" VerticalAlignment="Top" Width="159" Background="#FF2E2E2E" Opacity="0.95" Panel.ZIndex="99">
+            <Button x:Name="MW_Button_GO" Content="GO!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="44" Canvas.Left="105" Canvas.Top="7" Height="45" Click="MW_Button_GO_Click"/>
+            <Image x:Name="MW_DiceImage" Height="30" Canvas.Left="14" Canvas.Top="15" Width="30" Source="images/Dice1.png"/>
+            <Image x:Name="MW_DiceImage2" Height="30" Canvas.Left="59" Canvas.Top="15" Width="30" Source="images/Dice1.png"/>
+        </Canvas>
+        <Button x:Name="MW_button1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="button_Click" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Panel.ZIndex="99" Margin="448,482,0,0"/>
+        <Ellipse x:Name="MW_Ellipse1" Fill="#FFF50B0B" HorizontalAlignment="Left" Height="48" Margin="226,590,0,0" VerticalAlignment="Top" Width="48" Stroke="Black" Opacity="0.75"/>
 
     </Grid>
 </Window>

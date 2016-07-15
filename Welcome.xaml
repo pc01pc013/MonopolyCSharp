@@ -1,0 +1,31 @@
+﻿<Window x:Class="MonopolyCSharp.Welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MonopolyCSharp"
+        mc:Ignorable="d"
+        Title="Welcome" Height="400" Width="600" Background="White" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid>
+        <Label x:Name="label" Content="MonopolyCSharp" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="26.667" FontWeight="Bold" Height="44" Width="253"/>
+        <Label x:Name="label_Copy" Content="C#練習用大富翁遊戲專題  " HorizontalAlignment="Left" Margin="88,46,0,0" VerticalAlignment="Top" FontSize="16" FontStyle="Italic" Height="30" Width="210"/>
+        <Button x:Name="button_Start" Content="Start!" HorizontalAlignment="Left" Margin="496,292,0,0" VerticalAlignment="Top" Width="75" Height="57" FontSize="16" FontWeight="Bold" Click="button_Start_Click"/>
+        <Label x:Name="label_Copy1" Content="Version 0.1.0.0[develop]" HorizontalAlignment="Left" Margin="411,24,0,0" VerticalAlignment="Top" FontSize="13.333" Height="27" Width="160"/>
+        <Grid x:Name="W_playerGrid" HorizontalAlignment="Left" Height="162" Margin="109,116,0,0" VerticalAlignment="Top" Width="415">
+            <TextBox x:Name="textBox_player1" HorizontalAlignment="Left" Height="23" Margin="108,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Player1"/>
+            <CheckBox x:Name="checkBox_player2" Content="玩家2" HorizontalAlignment="Left" Margin="52,71,0,0" VerticalAlignment="Top" IsChecked="True" IsEnabled="False"/>
+            <CheckBox x:Name="checkBox_player3" Content="玩家3" HorizontalAlignment="Left" Margin="52,99,0,0" VerticalAlignment="Top" IsChecked="True"/>
+            <CheckBox x:Name="checkBox_player4" Content="玩家4" HorizontalAlignment="Left" Margin="52,127,0,0" VerticalAlignment="Top" IsChecked="True"/>
+            <TextBox x:Name="textBox_player2" HorizontalAlignment="Left" Height="23" Margin="108,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Player2"/>
+            <TextBox x:Name="textBox_player3" HorizontalAlignment="Left" Height="23" Margin="108,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Player3"/>
+            <CheckBox x:Name="checkBox_player1" Content="玩家1" HorizontalAlignment="Left" Margin="52,43,0,0" VerticalAlignment="Top" IsChecked="True" IsEnabled="False"/>
+            <TextBox x:Name="textBox_player4" HorizontalAlignment="Left" Height="23" Margin="108,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="Player4"/>
+            <Label x:Name="label_Copy2" Content="玩家資訊" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Height="27" Width="160" FontWeight="Bold" Margin="10,0,0,0"/>
+            <ComboBox x:Name="comboBox_player1" HorizontalAlignment="Left" Margin="245,43,0,0" VerticalAlignment="Top" Width="96"/>
+            <ComboBox x:Name="comboBox_player2" HorizontalAlignment="Left" Margin="245,69,0,0" VerticalAlignment="Top" Width="96"/>
+            <ComboBox x:Name="comboBox_player3" HorizontalAlignment="Left" Margin="245,97,0,0" VerticalAlignment="Top" Width="96"/>
+            <ComboBox x:Name="comboBox_player4" HorizontalAlignment="Left" Margin="245,123,0,0" VerticalAlignment="Top" Width="96"/>
+        </Grid>
+
+    </Grid>
+</Window>
